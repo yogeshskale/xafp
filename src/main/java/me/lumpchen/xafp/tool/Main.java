@@ -84,17 +84,17 @@ public class Main {
 			for (int i = 0; i < args.length; i++) {
 				String arg = args[i];
 				
-				if (arg.equals("-page")) {
+				if ("-page".equals(arg)) {
 					pageOpt = true;
 					from = Integer.parseInt(args[++i].trim());
 					to = Integer.parseInt(args[++i].trim());
-				} else if (arg.equals("-dpi")) {
+				} else if ("-dpi".equals(arg)) {
 					usePageResolution = false;
 					dpi = Integer.parseInt(args[++i].trim());
-				} else if (arg.equals("-dumpNop")) {
+				} else if ("-dumpNop".equals(arg)) {
 					dumpNop = true;
 					dumpNopFile = args[++i];
-				} else if (arg.equals("-dumpTLE")) {
+				} else if ("-dumpTLE".equals(arg)) {
 					dumpTLE = true;
 					dumpTLEFile = args[++i];
 				} else {
